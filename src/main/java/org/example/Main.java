@@ -8,9 +8,9 @@ public class Main {
         // to see how IntelliJ IDEA suggests fixing it.
         LinkedList<Integer> list = new LinkedList<>();
 
-        list.add(70);
-        list.add(30);
-        list.add(56);
+        list.append(56);
+        list.append(30);
+        list.append(70);
 
         list.display();
 
