@@ -25,5 +25,19 @@ public class LinkedListTest {
         assertTrue(list.search(40));
     }
 
+    @Test
+    public void testDeleteNode() {
+        LinkedList<Integer> list = new LinkedList<>();
+        list.add(56);
+        list.add(30);
+        list.add(40);
+        list.add(70);
+
+        list.deleteNode(40);
+
+        assertEquals(3, list.size());
+        assertFalse(list.search(40));
+    }
+
 
 }
