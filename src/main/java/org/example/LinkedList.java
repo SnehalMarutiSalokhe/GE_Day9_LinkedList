@@ -26,6 +26,22 @@ public class LinkedList<T> {
         }
     }
 
+    public void insertAt(int index, T data) {
+        Node<T> newNode = new Node<>(data);
+        if (index == 0) {
+            newNode.next = head;
+            head = newNode;
+            return;
+        }
+        Node<T> current = head;
+        for (int i = 0; i < index - 1; i++) {
+            current = current.next;
+        }
+        newNode.next = current.next;
+        current.next = newNode;
+    }
+
+
     public void display() {
         Node<T> current = head;
         while (current != null) {
