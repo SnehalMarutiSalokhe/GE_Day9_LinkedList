@@ -48,6 +48,17 @@ public class LinkedList<T> {
         }
     }
 
+    public void popLast() {
+        if (head == null || head.next == null) {
+            head = null;
+            return;
+        }
+        Node<T> current = head;
+        while (current.next.next != null) {
+            current = current.next;
+        }
+        current.next = null;
+    }
     public void display() {
         Node<T> current = head;
         while (current != null) {

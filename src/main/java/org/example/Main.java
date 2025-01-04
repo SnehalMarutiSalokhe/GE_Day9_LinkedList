@@ -14,8 +14,8 @@ public class Main {
         System.out.println("LinkedList  ");
         list.display();
 
-        System.out.println("LinkedList  after Pop");
-        list.pop();
+        System.out.println("LinkedList  after Pop Last");
+        list.popLast();
         list.display();
 
     }
