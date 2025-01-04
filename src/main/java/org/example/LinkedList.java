@@ -42,6 +42,12 @@ public class LinkedList<T> {
     }
 
 
+    public void pop() {
+        if (head != null) {
+            head = head.next;
+        }
+    }
+
     public void display() {
         Node<T> current = head;
         while (current != null) {
