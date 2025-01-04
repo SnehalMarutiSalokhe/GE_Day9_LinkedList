@@ -12,7 +12,6 @@ public class Main {
         list.add(30);
         list.add(56);
 
-        System.out.println("Linked List created:");
         list.display();
 
     }
