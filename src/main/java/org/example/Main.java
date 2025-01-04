@@ -8,10 +8,14 @@ public class Main {
         // to see how IntelliJ IDEA suggests fixing it.
         LinkedList<Integer> list = new LinkedList<>();
 
-        list.add(70);
-        list.add(30);
-        list.add(56);
+        list.append(56);
+        list.append(70);
+        list.insertAt(1, 30);
+        System.out.println("LinkedList  ");
+        list.display();
 
+        System.out.println("LinkedList  after Pop");
+        list.pop();
         list.display();
 
     }
