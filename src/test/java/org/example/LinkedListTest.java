@@ -13,4 +13,17 @@ public class LinkedListTest {
         assertTrue(list.search(30));
         assertFalse(list.search(100));
     }
+    @Test
+    public void testInsertAfter() {
+        LinkedList<Integer> list = new LinkedList<>();
+        list.add(56);
+        list.add(30);
+        list.add(70);
+
+        list.insertAfter(30, 40);
+
+        assertTrue(list.search(40));
+    }
+
+
 }

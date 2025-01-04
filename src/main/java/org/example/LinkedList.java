@@ -70,6 +70,20 @@ public class LinkedList<T> {
         }
         return false;
     }
+
+    public void insertAfter(T key, T data) {
+        Node<T> temp = head;
+        while (temp != null && !temp.data.equals(key)) {
+            temp = temp.next;
+        }
+        if (temp != null) {
+            Node<T> newNode = new Node<>(data);
+            newNode.next = temp.next;
+            temp.next = newNode;
+        }
+    }
+
+
     public void display() {
         Node<T> current = head;
         while (current != null) {
